@@ -11,4 +11,6 @@ echo "teams application has been killed"
 
 path = /var/lib/flatpak/exports/share/applications/com.github.IsmaelMartinez.teams_for_linux.desktop
 
+command=$(grep -oP '(?<=^Exec=).*' "$path")
 
+nohup $command > /dev/null 2>&1 &
