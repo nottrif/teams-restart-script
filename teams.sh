@@ -9,7 +9,7 @@ kill -15 "$pid"
 
 echo "teams application has been killed"
 
-path = /var/lib/flatpak/exports/share/applications/com.github.IsmaelMartinez.teams_for_linux.desktop
+path = "/var/lib/flatpak/exports/share/applications/com.microsoft.Teams.desktop"
 
 command=$(grep -oP '(?<=^Exec=).*' "$path")
 
